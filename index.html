@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Agency - landing page</title>
+    <link rel="stylesheet" href="/css/fullpage.css" />
+
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
@@ -170,5 +172,72 @@
         alt="Laptop"
       />
     </section>
+
+    <section class="portfolio">
+      <div class="navigation">
+        <div class="navigation__logo"><span>in</span>DigitArt</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Who we are</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">What we do</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="portfolio__box-wrapper">
+        <div class="portfolio__box">
+          <h3 class="portfolio__heading garage">
+            Garage
+          </h3>
+          <p class="portfolio__paragraph">E-commerce Websites</p>
+        </div>
+
+        <div class="portfolio__box">
+          <h3 class="portfolio__heading make">MAKE</h3>
+          <p class="portfolio__paragraph">Websites</p>
+        </div>
+
+        <div class="portfolio__box">
+          <h3 class="portfolio__heading home">HOME</h3>
+          <p class="portfolio__paragraph">Real estate website</p>
+        </div>
+
+        <div class="portfolio__box">
+          <h3 class="portfolio__heading think">Think Greek</h3>
+          <p class="portfolio__paragraph">Real estate website</p>
+        </div>
+
+        <div class="portfolio__box">
+          <h3 class="portfolio__heading raffaele">Raffaele</h3>
+          <p class="portfolio__paragraph">Restaurant Website</p>
+        </div>
+
+        <div class="portfolio__box">
+          <h3 class="portfolio__heading swiss">Swiss</h3>
+          <p class="portfolio__paragraph">Website</p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"
+    ></script>
+    <script>
+      new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true
+      });
+    </script>
   </body>
 </html>

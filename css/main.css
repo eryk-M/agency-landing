@@ -10,6 +10,7 @@
   --color-grey: #464646;
   --color-grey-light: #777777;
   --color-grey-light-2: #f2f2f2;
+  --color-grey-dark: #363636;
   --color-blue: #478ec9;
   --color-blue-dark: #2f3640;
 }
@@ -39,7 +40,7 @@ body {
 }
 
 .header {
-  background-image: url("/img/people.jpg");
+  background-image: url("https://eryk-m.github.io/agency-landing/img/people.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -291,5 +292,175 @@ body {
 
 .what__box-tertiary {
   margin-bottom: 2rem;
+}
+
+.portfolio {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-grey-dark);
+}
+
+.portfolio .navigation {
+  height: 10vh;
+}
+
+.portfolio .navigation__logo {
+  color: var(--color-grey-light-2);
+}
+
+.portfolio .navigation__logo span {
+  color: var(--color-blue);
+}
+
+.portfolio .navigation__link {
+  color: var(--color-grey-light-2);
+}
+
+.portfolio__box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+  height: 75vh;
+  margin-top: 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.portfolio__box {
+  margin-top: 15rem;
+  margin-left: 17rem;
+  width: 25rem;
+  height: 25rem;
+  color: var(--color-grey-light-2);
+}
+
+.portfolio__heading {
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio__paragraph {
+  font-size: 1.6rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.garage:before {
+  content: "G";
+  background: url("https://eryk-m.github.io/agency-landing/img/greek.jpg");
+  -webkit-text-fill-color: rgba(41, 129, 124, 0.7);
+  -webkit-background-clip: text;
+  background-size: 100%;
+  position: absolute;
+  top: -28rem;
+  left: -20rem;
+  font-weight: 200;
+  z-index: -2;
+  font-family: inherit;
+  font-size: 33.3rem;
+}
+
+.make::before {
+  content: "M";
+  background: url("https://eryk-m.github.io/agency-landing/img/make.jpg");
+  -webkit-text-fill-color: rgba(102, 155, 251, 0.7);
+  -webkit-background-clip: text;
+  background-size: 100%;
+  position: absolute;
+  top: -28rem;
+  left: -25rem;
+  font-weight: 800;
+  z-index: -1;
+  font-family: inherit;
+  font-size: 33.3rem;
+}
+
+.home::before {
+  content: "H";
+  background: url("https://eryk-m.github.io/agency-landing/img/home.jpg");
+  -webkit-text-fill-color: rgba(119, 62, 204, 0.7);
+  -webkit-background-clip: text;
+  background-size: 100%;
+  position: absolute;
+  top: -28rem;
+  left: -20rem;
+  font-weight: 800;
+  z-index: -1;
+  font-family: inherit;
+  font-size: 33.3rem;
+}
+
+.think::before {
+  content: "T";
+  background: url("https://eryk-m.github.io/agency-landing/img/think.jpg");
+  -webkit-text-fill-color: rgba(237, 69, 188, 0.7);
+  -webkit-background-clip: text;
+  background-size: 100%;
+  position: absolute;
+  top: -28rem;
+  left: -15rem;
+  font-weight: 800;
+  z-index: -1;
+  font-family: inherit;
+  font-size: 33.3rem;
+}
+
+.raffaele::before {
+  content: "R";
+  background: url("https://eryk-m.github.io/agency-landing/img/raffaele.jpg");
+  -webkit-text-fill-color: rgba(254, 239, 57, 0.7);
+  -webkit-background-clip: text;
+  background-size: 100%;
+  position: absolute;
+  top: -28rem;
+  left: -20rem;
+  font-weight: 800;
+  z-index: -1;
+  font-family: inherit;
+  font-size: 33.3rem;
+}
+
+.swiss::before {
+  content: "S";
+  background: url("https://eryk-m.github.io/agency-landing/img/swiss.jpg");
+  -webkit-text-fill-color: rgba(237, 69, 112, 0.7);
+  -webkit-background-clip: text;
+  background-size: 100%;
+  position: absolute;
+  top: -28rem;
+  left: -16rem;
+  font-weight: 800;
+  z-index: -1;
+  font-family: inherit;
+  font-size: 33.3rem;
+}
+
+nav#dot-nav {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 10000;
+}
+
+nav#dot-nav a {
+  border: 1px solid #121212;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: block;
+  margin: 10px;
+}
+
+nav#dot-nav a.active,
+nav#dot-nav a:first-child {
+  background: #121212;
 }
 /*# sourceMappingURL=main.css.map */
