@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Angelina";
-  src: url("/fonts/angelinevintage.ttf") format("truetype");
+  src: url("https://eryk-m.github.io/agency-landing/fonts/angelinevintage.ttf") format("truetype");
 }
 
 :root {

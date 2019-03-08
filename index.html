@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Agency - landing page</title>
     <link rel="stylesheet" href="/css/fullpage.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800"
       rel="stylesheet"
@@ -34,7 +37,7 @@
           </ul>
         </nav>
       </div>
-      <div class="header__heading">
+      <div class="header__heading wow fadeIn" data-wow-duration="1s">
         <h1 class="header__heading--primary">
           A client-centered design studio.
         </h1>
@@ -66,8 +69,10 @@
         </nav>
       </div>
       <div class="about__text">
-        <h2 class="about__heading">Hello. We are Creative Web Studio</h2>
-        <div class="about__text-box">
+        <h2 class="about__heading wow fadeInLeft">
+          Hello. We are Creative Web Studio
+        </h2>
+        <div class="about__text-box wow fadeInRight">
           <p class="about__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             ut maiores amet explicabo quia aspernatur iusto autem quaerat
@@ -85,16 +90,21 @@
 
           <div class="about__numbers">
             <div class="about_numbers-box">
-              <p class="about__numbers--1"><span>7</span>Geek & Artists</p>
-            </div>
-            <div class="about_numbers-box">
               <p class="about__numbers--1">
-                <span>124</span>Satisfied Customers
+                <span class="counter-value" data-count="7">0</span>Geek &
+                Artists
               </p>
             </div>
             <div class="about_numbers-box">
               <p class="about__numbers--1">
-                <span>915</span>Delivered Projects
+                <span class="counter-value" data-count="124">0</span>Satisfied
+                Customers
+              </p>
+            </div>
+            <div class="about_numbers-box">
+              <p class="about__numbers--1">
+                <span class="counter-value" data-count="915">0</span>Delivered
+                Projects
               </p>
             </div>
           </div>
@@ -124,10 +134,10 @@
       </div>
 
       <div class="what__box">
-        <h2 class="what__box-heading">
+        <h2 class="what__box-heading wow fadeIn">
           What we do
         </h2>
-        <div class="what__box-item">
+        <div class="what__box-item wow fadeInUp">
           <img
             class="what__box-image"
             src="https://eryk-m.github.io/agency-landing/img/pen.png"
@@ -140,7 +150,7 @@
           </p>
         </div>
 
-        <div class="what__box-item">
+        <div class="what__box-item wow fadeInUp" data-wow-delay="0.5s">
           <img
             class="what__box-image coding"
             src="https://eryk-m.github.io/agency-landing/img/coding.png"
@@ -152,7 +162,7 @@
           </p>
         </div>
 
-        <div class="what__box-item">
+        <div class="what__box-item wow fadeInUp" data-wow-delay="1s">
           <img
             class="what__box-image line-chart"
             src="https://eryk-m.github.io/agency-landing/img/line-chart.png"
@@ -167,7 +177,8 @@
       </div>
 
       <img
-        class="what__laptop"
+        class="what__laptop wow fadeInRight"
+        data-wow-duration="1s"
         src="https://eryk-m.github.io/agency-landing/img/laptop.png"
         alt="Laptop"
       />
@@ -308,12 +319,15 @@
       ></iframe>
     </section>
 
-    <script src="js/main.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
+      new WOW().init();
       new fullpage("#fullpage", {
         //options here
         autoScrolling: true,
