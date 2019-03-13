@@ -647,7 +647,7 @@ body {
 
 .reviews__author:before {
   content: "";
-  background: url(/img/man-1.jpg);
+  background: url(https://eryk-m.github.io/agency-landing/img/man-1.jpg);
   border-radius: 50%;
   background-position: bottom;
   background-size: cover;
