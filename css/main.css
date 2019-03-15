@@ -32,6 +32,12 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -377,8 +383,8 @@ body {
 }
 
 .what__laptop {
-  height: 85%;
-  width: auto;
+  height: auto;
+  max-width: 65%;
   position: absolute;
   bottom: 0;
   right: 0;
