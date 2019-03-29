@@ -276,6 +276,12 @@ body {
   margin-right: 8.5rem;
 }
 
+@media only screen and (max-width: 769px) {
+  .navigation__list {
+    display: none;
+  }
+}
+
 .navigation__item {
   display: inline-block;
 }
@@ -352,6 +358,19 @@ body {
   }
 }
 
+@media (orientation: landscape) and (max-height: 415px) {
+  .about__heading {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .about__heading {
+    font-size: 6rem;
+    margin-top: 1rem;
+  }
+}
+
 .about__text-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,9 +389,9 @@ body {
     width: 90vw;
     text-align: center;
     margin: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: -15rem;
   }
 }
 
@@ -422,6 +441,12 @@ body {
   color: var(--color-grey-light);
 }
 
+@media only screen and (max-width: 376px) {
+  .about__numbers {
+    margin-top: 0;
+  }
+}
+
 .what {
   background-color: var(--color-grey-light-2);
   position: relative;
@@ -440,20 +465,53 @@ body {
 }
 
 .what__laptop {
-  height: auto;
-  max-width: 65%;
+  height: 80rem;
+  width: auto;
   position: absolute;
   bottom: 0;
   right: 0;
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1601px) {
   .what__laptop {
-    right: 22%;
-    bottom: -9%;
-    height: 65%;
-    width: auto;
+    height: 70rem;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .what__laptop {
+    right: 29%;
+    bottom: 10%;
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media only screen and (height: 768px) and (width: 1366px) {
+  .what__laptop {
+    bottom: -2%;
+  }
+}
+
+@media (orientation: portrait) and (max-height: 1367px) {
+  .what__laptop {
+    bottom: 10%;
+    width: 70%;
+    right: 20%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .what__laptop {
+    width: 80%;
+    right: 10%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .what__laptop {
+    width: 50%;
   }
 }
 
@@ -469,9 +527,17 @@ body {
   color: var(--color-grey-dark);
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1601px) {
+  .what__box-heading {
+    margin-top: -10rem;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
   .what__box-heading {
     position: absolute;
+    margin-top: -3rem;
+    font-size: 4.8rem;
     top: 15%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -486,6 +552,19 @@ body {
   height: 12rem;
 }
 
+@media only screen and (max-width: 1601px) {
+  .what__box-item {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .what__box-item {
+    font-size: 1rem;
+  }
+}
+
 .what__box-item .line-chart {
   height: 85%;
 }
@@ -496,6 +575,30 @@ body {
 
 .what__box-item .pen {
   height: 85%;
+}
+
+@media only screen and (max-width: 1601px) {
+  .what__box-item .pen {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .what__box-item .pen {
+    height: 85%;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .what__box-item {
+    width: 33.3%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .what__box-item {
+    margin-top: 1rem;
+  }
 }
 
 .what__box-image {
@@ -511,6 +614,12 @@ body {
   }
 }
 
+@media (orientation: landscape) and (max-height: 415px) {
+  .what__box-image {
+    float: left;
+  }
+}
+
 .what__box-tertiary {
   margin-bottom: 2rem;
   font-family: "Open Sans";
@@ -520,6 +629,13 @@ body {
   .what__box-paragraph {
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .what__box-paragraph {
+    text-align: left;
+    font-size: 0.8rem;
   }
 }
 
@@ -536,6 +652,14 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-top: -5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .what__box-wrapper {
+    top: 55%;
+    display: block;
+    height: 55%;
   }
 }
 
@@ -578,6 +702,38 @@ body {
   }
 }
 
+@media only screen and (max-width: 1025px) {
+  .portfolio__box-wrapper {
+    margin-top: 2rem;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .portfolio__box-wrapper {
+    margin-top: 18rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .portfolio__box-wrapper {
+    margin-top: 8rem;
+    max-width: 90%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .portfolio__box-wrapper {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .portfolio__box-wrapper {
+    margin-top: 10rem;
+  }
+}
+
 .portfolio__box {
   margin-top: 15rem;
   margin-left: 17rem;
@@ -590,6 +746,58 @@ body {
   .portfolio__box {
     width: 20rem;
     height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .portfolio__box {
+    margin-top: 30rem;
+    margin-left: 18rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .portfolio__box {
+    margin-top: 15rem;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1025px) {
+  .portfolio__box {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .portfolio__box {
+    margin-left: 4rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .portfolio__box {
+    height: 13rem;
+    margin-left: 1rem;
+    margin-top: 10rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 376px) {
+  .portfolio__box {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .portfolio__box {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .portfolio__box {
+    width: 15rem;
+    margin-top: 10rem;
   }
 }
 
@@ -620,6 +828,36 @@ body {
   font-size: 33.3rem;
 }
 
+@media only screen and (max-width: 1025px) {
+  .garage:before {
+    left: -20rem;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .garage:before {
+    font-size: 25rem;
+    left: -15rem;
+    top: -20rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .garage:before {
+    font-size: 19rem;
+    left: -1rem;
+    top: -20rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .garage:before {
+    font-size: 15rem;
+    left: 0;
+    top: -12rem;
+  }
+}
+
 .make::before {
   content: "M";
   background: url("https://eryk-m.github.io/agency-landing/img/make.jpg");
@@ -633,6 +871,30 @@ body {
   z-index: -1;
   font-family: inherit;
   font-size: 33.3rem;
+}
+
+@media only screen and (max-width: 1025px) {
+  .make::before {
+    font-size: 25rem;
+    left: -15rem;
+    top: -20rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .make::before {
+    font-size: 19rem;
+    left: -1rem;
+    top: -20rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .make::before {
+    font-size: 15rem;
+    left: 0;
+    top: -12rem;
+  }
 }
 
 .home::before {
@@ -650,6 +912,30 @@ body {
   font-size: 33.3rem;
 }
 
+@media only screen and (max-width: 1025px) {
+  .home::before {
+    font-size: 25rem;
+    left: -15rem;
+    top: -20rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .home::before {
+    font-size: 19rem;
+    left: -1rem;
+    top: -20rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .home::before {
+    font-size: 15rem;
+    left: 0;
+    top: -12rem;
+  }
+}
+
 .think::before {
   content: "T";
   background: url("https://eryk-m.github.io/agency-landing/img/think.jpg");
@@ -663,6 +949,30 @@ body {
   z-index: -1;
   font-family: inherit;
   font-size: 33.3rem;
+}
+
+@media only screen and (max-width: 1025px) {
+  .think::before {
+    font-size: 25rem;
+    left: -15rem;
+    top: -20rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .think::before {
+    font-size: 19rem;
+    left: -1rem;
+    top: -20rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .think::before {
+    font-size: 15rem;
+    left: 0;
+    top: -12rem;
+  }
 }
 
 .raffaele::before {
@@ -680,6 +990,30 @@ body {
   font-size: 33.3rem;
 }
 
+@media only screen and (max-width: 1025px) {
+  .raffaele::before {
+    font-size: 25rem;
+    left: -15rem;
+    top: -20rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .raffaele::before {
+    font-size: 19rem;
+    left: -1rem;
+    top: -20rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .raffaele::before {
+    font-size: 15rem;
+    left: 0;
+    top: -12rem;
+  }
+}
+
 .swiss::before {
   content: "S";
   background: url("https://eryk-m.github.io/agency-landing/img/swiss.jpg");
@@ -693,6 +1027,30 @@ body {
   z-index: -1;
   font-family: inherit;
   font-size: 33.3rem;
+}
+
+@media only screen and (max-width: 1025px) {
+  .swiss::before {
+    font-size: 25rem;
+    left: -15rem;
+    top: -20rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .swiss::before {
+    font-size: 19rem;
+    left: -1rem;
+    top: -20rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  .swiss::before {
+    font-size: 15rem;
+    left: 0;
+    top: -12rem;
+  }
 }
 
 .reviews {
@@ -711,6 +1069,23 @@ body {
   color: var(--color-grey);
 }
 
+@media only screen and (max-width: 1300px) {
+  .reviews__time-to-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .reviews__time-to-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .reviews__wrapper {
   width: 75%;
   margin: 0 auto;
@@ -726,6 +1101,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80%;
   }
 }
 
@@ -734,6 +1118,31 @@ body {
   font-weight: 300;
   margin-top: 9rem;
   font-size: 4.8rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .reviews__heading {
+    margin-bottom: auto;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1100px) {
+  .reviews__heading {
+    margin-bottom: 20rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .reviews__heading {
+    margin-bottom: 1rem;
+    margin-top: -10rem;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .reviews__heading {
+    margin-top: -5rem;
+  }
 }
 
 .reviews__box {
@@ -769,8 +1178,49 @@ body {
 
 @media only screen and (max-width: 1300px) {
   .reviews__box {
-    width: 90vw;
-    height: 10rem;
+    width: 30%;
+    height: 50rem;
+    margin: 0;
+  }
+  .reviews__box:nth-of-type(1) {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1100px) {
+  .reviews__box {
+    width: 30%;
+    height: 50rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 415px), only screen and (hover: none) {
+  .reviews__box {
+    height: 25rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+  }
+  .reviews__box:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .reviews__box:not(:first-child) {
+    margin-top: 1rem;
+  }
+  .reviews__box:nth-of-type(2) {
+    display: none;
+  }
+  .reviews__box:last-child {
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .reviews__box {
+    height: 20rem;
   }
 }
 
@@ -812,6 +1262,24 @@ body {
   opacity: 0;
 }
 
+@media only screen and (max-width: 1300px) {
+  .reviews__author {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .reviews__author::before {
+    opacity: 1;
+    margin: 0;
+    top: 12%;
+  }
+  .reviews__author::after {
+    margin: 0;
+    width: 5rem;
+  }
+}
+
 .reviews__info {
   font-size: 1.6rem;
 }
@@ -823,6 +1291,20 @@ body {
   text-align: left;
   width: 80%;
   margin-left: 2rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .reviews__paragraph {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .reviews__paragraph {
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 
 .fade {
